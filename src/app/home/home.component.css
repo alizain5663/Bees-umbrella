@@ -1,0 +1,366 @@
+/* section{
+    height: 100vh;
+}
+.redbtn{
+    background: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+    border-radius: 0%;
+    border-color: red;
+} */
+
+/* progressive bars */
+.progress-bar {
+  width: 0;
+  animation: progress 1.5s ease-in-out forwards;
+  background-color:white;
+  
+}
+.progress-bar .title {
+  opacity: 0;
+  animation: show 0.35s forwards ease-in-out 0.5s;
+}
+@keyframes progress {
+  from {
+    width: 0;
+ }
+  to {
+    width: 100%;
+ }
+}
+@keyframes show {
+  from {
+    opacity: 0;
+ }
+  to {
+    opacity: 1;
+ }
+}
+@media (max-width: 1199px){ 
+  .progressBarBox{
+    margin-top: 18px;
+  }
+}
+
+.About-Us{
+  font-family: Merriweather,serif;
+}
+.main-heading{
+  font-family: Merriweather,serif;
+  font-weight: 700;
+}
+@media (max-width: 1199px){ 
+  .About-Us{
+    font-size: 26px;
+  }
+  .main-heading{
+    font-size: 33px;
+  }
+}
+.main-para{
+  font-family: poppins;
+  font-weight: 400;
+}
+/* :default-color */
+.bg-yellow{
+  background: rgb(242, 199, 68)
+}
+/* :default-color */
+
+/* progressive bars */
+
+/*********************>>  */
+/* 
+    ================================
+        Best Viewed In Full Page
+    ================================
+*/
+
+/* Hover over a card to flip, can tab too. */
+
+
+
+/* .flip-card-container */
+.flip-card-container {
+ 
+
+  width: 100%;
+  height: 20vh;
+  /* margin: 40px; */
+
+  perspective: 1000px;
+  
+}
+
+/* .flip-card */
+.flip-card {
+  width: inherit;
+  height: inherit;
+
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: .6s .1s;
+  
+}
+
+/* hover and focus-within states */
+.flip-card-container:hover .flip-card,
+.flip-card-container:focus-within .flip-card {
+  transform: rotateY(180deg);
+}
+
+/* .card-... */
+.card-front,
+.card-back {
+  width: 100%;
+  height: 100%;
+  border-radius: 24px;
+
+
+  background: rgb(242, 199, 68);
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+
+  backface-visibility: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .card-front */
+.card-front {
+  transform: rotateY(0deg);
+  z-index: 2;
+}
+
+/* .card-back */
+.card-back {
+  transform: rotateY(180deg);
+  z-index: 1;
+}
+/* hover state */
+.flip-card-container:hover .card-front .img-bg::before {
+  width: 6px;
+  border-left-color: var(--primary);
+  border-right-color: var(--primary);
+}
+@media (max-width: 767px) {
+ .flip-card-container{
+  margin-bottom: 10px;
+ }
+
+
+}
+.mainImage{
+background-image:url(../../assets/imgs/mainImage2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 875px;
+  
+}
+
+/*=======================>> Service Card */
+   .box{
+    height: 25vh;
+    /* background: rgb(242, 199, 68); */
+   }
+/*=======================>> Service Card */
+/*=======================>> Service Card-2 */
+.wrapper{
+  height: 35vh;
+}
+/*=======================>> Service Card-2 */
+/*=======================>> Contact Form */
+.bgImage::before{
+  content: "";
+  z-index: -2;
+  /* position: relative; */
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.445);
+  height: 70vh;
+  width: 100%;
+  display: block;
+  border-radius: 30px 0px 0px 30px;
+
+}
+.bgImage{
+  background-image: url('https://images.unsplash.com/photo-1540457943340-2e70b692e50e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHN1biUyMGZsb3dlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh;
+  width: 100%;
+  z-index: 1;
+  /* position: absolute; */
+  position: relative;
+  border-radius: 30px 0px 0px 30px;
+}
+.heading{
+  /* padding-top: 10vh; */
+  text-align: start;
+}
+.heading h2 {
+  font-family: serif;
+  font-weight: 700;
+}
+.heading span {
+  font-family: poppins;
+  font-weight: 500;
+}
+
+.formContainer{
+  margin-left:-12px;
+  border-radius: 0px 30px 30px 0px;
+  
+}
+.btn-yellow {
+  border: 1px solid rgb(242, 199, 68);
+  color: white;
+  cursor: pointer;
+}
+.btn-yellow:hover {
+  background: rgb(242, 199, 68);
+  cursor: pointer;
+}
+.registerbtn{
+  margin-top: 10vh;
+}
+.ukImage{
+  height: 4vh;
+  width: 15%;
+}
+label{
+  font-family: poppins;
+  font-weight: 500;
+}
+input{
+  height: 4vh;
+}
+input:focus{
+  box-shadow: none;
+}
+.nameBlock{
+  display: inline-block;
+}
+.numberblock{
+  display: inline-block;
+  margin-left: -36px;
+}
+.numberInput{
+  width: 82%;
+}
+
+/*=======================>> Font-Awesome*/
+/* .fa-umbrella{
+  margin-left: 5px;
+} */
+
+/*=======================>> Font-Awesome*/
+
+/*=======================>> Contact Form */
+/*=======================>> Contact Form Responsive */
+
+@media (max-width: 1400px){ 
+  .bgImage::before{
+    height: 72vh;
+  }
+  .bgImage{
+    height: 72vh;
+  }
+}
+
+@media (max-width: 1399px){ 
+  .numberblock{
+    margin-left: 0px;
+    display: block;
+  }
+  .numberInput{
+    width: 86%;
+    
+  }
+  .nameBlock{
+    display: block;
+  }
+  .ukImage{
+    height: 4vh;
+    width: 10%;
+  }
+  .bgImage::before{
+    height: 66vh;
+  }
+  .bgImage{
+    height: 66vh;
+  }
+  input{
+    height: 4vh;
+  }
+  textarea{
+    width: 100%;
+    height: 15vh;
+  }
+}
+
+@media (max-width: 991px){
+  .numberInput{
+
+    width:79%;
+  }
+  .ukImage{
+    height: 3vh;
+    width:15%;
+
+  }
+  .bgImage::before{
+    height: 72vh;
+  }
+  .bgImage{
+    height: 72vh;
+  }
+  input{
+    height: 3vh;
+  }
+  textarea{
+    width: 100%;
+    height: 15vh;
+  }
+  .card-responsive{
+    padding-left: 10px;
+  }
+  
+}
+@media (max-width: 767px){ 
+  .formContainer{
+    margin-left: 24px;
+    width: 92%;
+  }
+  .bgImage::before{
+    height: 91vh;
+    
+  }
+  .bgImage{
+    height: 91vh;
+    width: 96%;
+    margin-left: 12px;
+  }
+  .numberInput{
+    width: 91%;
+  }
+  .ukImage{
+    height: 2.5vh;
+    width: 7%;
+  }
+
+  
+}
+
+/* .message{
+  width: 100%;
+  height: 5vh;
+} */
+
+/*=======================>> Contact Form Responsive*/
+

@@ -1,0 +1,5 @@
+div {
+    background:#F2C744;
+    transition: all 1200ms ease-out;
+    will-change: background;
+  }
