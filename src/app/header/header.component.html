@@ -1,63 +1,30 @@
-<header id="header">
-  <nav class="nav">
-    <button class="menu" (click)="showNavHeader()" class="toggle-menu" [ngClass]="toggleActive ? 'Active opened':''">
-      <svg width="80" height="80" viewBox="0 0 100 100">
-        <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
-        <path class="line line2" d="M 20,50 H 80" />
-        <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
-      </svg>
-    </button>
-  </nav>
- <div class="embed-responsive embed-responsive-16by9">
-      <video class="embed-responsive-item " src="../../assets/imgs/main-video.mp4" autoplay loop [muted]="true" [width]="1870" ></video>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav justify-content-center"> <!-- Add justify-content-center class here -->
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </div>
-</header>
-
-<div id="menu" class="" [ngClass]="toggleOpen ? 'open':''">
-  <button class="menu burgerButtontwo" (click)="showNavHeader()" class="toggle-menu" [ngClass]="toggleActive ? 'Active opened':''">
-    <svg width="80" height="80" viewBox="0 0 100 100">
-      <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
-      <path class="line line2" d="M 20,50 H 80" />
-      <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
-    </svg>
-  </button>
-  <nav class="main-nav">
-    <ul>
-      <li>
-        <a href="#">
-          About
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          Pricing
-        </a>
-      </li>
-      
-      <li>
-        <a href="#">
-          Contact
-        </a>
-      </li>
-    </ul>
-  </nav>
-  
-  <footer class="menu-footer">
-    <nav class="footer-nav">
-      <ul>
-        <li>
-          <a href="#">
-            <i class="fa fa-twitter fa-fw"></i>
-            Twitter
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="fa fa-envelope fa-fw"></i>
-            Subscribe
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </footer>
+  </div>
 </div>

@@ -1,8 +1,20 @@
-*{
+/* *{
   font-family: 'Londrina Shadow', cursive;
   font-weight: bold;
 }
 
+video {
+  max-width: 100%;
+  height: auto;
+}
+.mainVideo{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  
+}
 
 @media (max-width: 576px) {
     .carousel-caption h5 {
@@ -172,7 +184,7 @@
 }
 
 /* Custom burger Icon */
-.menu {
+/* .menu {
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -232,6 +244,15 @@
   position: absolute;
   left: 32px;
   top: 32px;
-}
+} */
 
 /* Custom burger Icon */
+
+
+  /* nav {
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  } */
+
