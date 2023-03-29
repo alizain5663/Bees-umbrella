@@ -22,7 +22,9 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  scroll(el:HTMLElement){
+    el.scrollIntoView();
+  }
   public runToaster(){
     this.toastr.success(`Very Weldone It's Working 😏`);
  
