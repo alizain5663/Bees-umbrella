@@ -4,6 +4,7 @@ import { Chart, ChartConfiguration, ChartEvent, ChartType } from 'chart.js';
 import { BaseChartDirective } from 'ng2-charts';
 import { default as Annotation } from 'chartjs-plugin-annotation';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { ActivatedRoute, Router } from '@angular/router';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -14,13 +15,18 @@ export class HomeComponent implements OnInit {
   public contactForm : any|FormGroup
 
   constructor(private toastr:ToastrService ,
-              private formbuilder:FormBuilder                          
+              private formbuilder:FormBuilder,
+              private _ActivatedRoute:ActivatedRoute, 
+              private _Router:Router                          
     ) {
     Chart.register(Annotation) 
     this.formInitialization()
   }
 
   ngOnInit(): void {
+    this._ActivatedRoute.fragment.subscribe((fragment:any) => {
+      this._Router.navigateByUrl(`/home#${fragment}`);
+    })
   }
   scroll(el:HTMLElement){
     el.scrollIntoView();

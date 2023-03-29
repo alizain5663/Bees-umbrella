@@ -10,6 +10,7 @@ const routerOptions: ExtraOptions = {
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
+  { path: 'home', component: HomeComponent },
   { path: 'login', component: LoginComponent },
   { path: 'signup', component: SignupComponent },
   { path: 'adminPortal', loadChildren: () => import('./admin-portal/admin-portal.module').then(m => m.AdminPortalModule) },
