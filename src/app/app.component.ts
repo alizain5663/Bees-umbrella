@@ -1,11 +1,16 @@
 import { Component, OnInit, HostListener, ViewChild, ElementRef } from '@angular/core';
 import { backgroundColors, COLOR } from './Shared/background-colors-enum';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
+  template: `
+  <app-footer (openModal)="openModal($event)"></app-footer>
+`
 })
 export class AppComponent implements OnInit {
+ 
   @ViewChild('One') One:ElementRef | any;
   @ViewChild('Two') Two:ElementRef | any;
   @ViewChild('Three') Three:ElementRef | any;
@@ -48,7 +53,8 @@ export class AppComponent implements OnInit {
   //   // Your Code Here
 
   // }
-  constructor() { }
+  constructor( ) { }
+ 
 
   ngOnInit(): void {
 
@@ -57,4 +63,5 @@ export class AppComponent implements OnInit {
   ngAfterViewInit(): void {
     console.log(this.One)
   }
+
 }

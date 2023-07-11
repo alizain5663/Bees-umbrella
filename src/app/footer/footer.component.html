@@ -19,13 +19,38 @@
                     <div class="">
                         <h6 class="footer-heading text-uppercase text-white">Legal Papers</h6>
                         <ul class="list-unstyled footer-link mt-4">
-                            <li><a routerLink="terms">Rules and Regulations </a></li>
-                            <li><a  routerLink="slavery">Current Slavery</a></li>
-                                <li><a routerLink="privacy">Privacy Principles</a></li>
+                            <!-- <li><button (click)="openModal(ModalContent.CONTENT_A)">Open Modal A</button></li>
+                            <li><button (click)="openModal(ModalContent.CONTENT_B)">Open Modal B</button>li>
+                            <li><button (click)="openModal(ModalContent.CONTENT_C)">Open Modal C</button></li> -->
+                            <div class="button-group">
+                                <li><button type="button" (click)="onButtonClick(ModalContentType.CONTENT_TYPE_1)">Button 1</button> </li>
+                                <button type="button" (click)="onButtonClick(ModalContentType.CONTENT_TYPE_2)">Button 2</button>
+                                <button type="button" (click)="onButtonClick(ModalContentType.CONTENT_TYPE_3)">Button 3</button>
+                              </div>
                         </ul>
                     </div>
                 </div>
-    
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Modal Title</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <ng-container *ngIf="selectedModalContent === ModalContentType.CONTENT_TYPE_1">
+                            <p id="debug">Debug info for Button 1</p>
+                          </ng-container>
+                          <ng-container *ngIf="selectedModalContent === ModalContentType.CONTENT_TYPE_2">
+                            <p>Content for Button 2</p>
+                          </ng-container>
+                          <ng-container *ngIf="selectedModalContent === ModalContentType.CONTENT_TYPE_3">
+                            <p>Content for Button 3</p>
+                          </ng-container>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 <div class="col-lg-3 mt-3">
                     <div class="mt-3">
                         <h6 class="footer-heading text-uppercase text-white">Contact</h6>
