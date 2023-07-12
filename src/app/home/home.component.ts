@@ -28,11 +28,11 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     this.videoElement = document.getElementById('myVideo');
 
-    if (this.videoElement && this.videoElement.loaded) {
+    this.videoElement.addEventListener('loadedmetadata', () => {
       if (!this.videoElement.playing) {
         this.videoElement.play();
       }
-    }
+    });
     this._ActivatedRoute.fragment.subscribe((fragment:any) => {
       this._Router.navigateByUrl(`/home#${fragment}`);
     })
