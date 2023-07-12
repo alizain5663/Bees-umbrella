@@ -8,14 +8,6 @@
     border-color: red;
 } */
 
-#myVideo::-webkit-media-controls-enclosure {
-  display: none !important;
-}
-
-#myVideo::-webkit-media-controls-panel {
-  -webkit-appearance: none !important;
-  display: -webkit-box !important;
-}
 
 /* progressive bars */
 .progress-bar {

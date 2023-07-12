@@ -11,10 +11,8 @@ import { ActivatedRoute, Router } from '@angular/router';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  
   private newLabel? = 'New label';
   public contactForm : any|FormGroup
-  videoElement: HTMLVideoElement|any;
 
   constructor(private toastr:ToastrService ,
               private formbuilder:FormBuilder,
@@ -26,15 +24,6 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    document.addEventListener('DOMContentLoaded', () => {
-      this.videoElement = document.getElementById('myVideo');
-  
-      if (this.videoElement && this.videoElement.loaded) {
-        if (!this.videoElement.playing) {
-          this.videoElement.play();
-        }
-      }
-    });
     this._ActivatedRoute.fragment.subscribe((fragment:any) => {
       this._Router.navigateByUrl(`/home#${fragment}`);
     })
