@@ -358,6 +358,7 @@ input:focus{
 a, a:hover, a:focus, a:active {
   text-decoration: none;
   outline: none;
+  cursor: pointer;
 }
 ul {
   margin: 0;
