@@ -33,17 +33,20 @@ export class AppComponent implements OnInit {
       this.backgroundColor = backgroundColors.One;
       this.color = COLOR.One;
     }
-    if (scroll > 1000) {
+    if (scroll > 1600) {
       this.backgroundColor = backgroundColors.Two;
       this.color = COLOR.Two;
     }
-    if (scroll > 1600) {
+    // 1600
+    if (scroll > 4700) {
       this.backgroundColor = backgroundColors.Three;
     }
-    if (scroll > 2400) {
+    // 2400
+    if (scroll > 5700) {
       this.backgroundColor = backgroundColors.Four;
     }
-    if (scroll > 3000) {
+    // 3000
+    if (scroll > 6100) {
       this.backgroundColor = backgroundColors.Five;
     }
   }

@@ -6,7 +6,8 @@
 } */
 .div
 {
-    background-color: black;
+    background-color: #202020;
+    /* background-color: black; */
 
 
 }
@@ -16,7 +17,8 @@
 
 
 .bg-footer {
-    background-color: black;
+    background-color: #202020;
+    /* background-color: black; */
     /* height: 70vh; */
     padding: 50px 0 30px;
 }

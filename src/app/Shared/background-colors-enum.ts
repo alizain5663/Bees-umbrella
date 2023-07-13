@@ -1,9 +1,14 @@
 export enum backgroundColors {
+    // One Yellow
     'One' = "#F2C744",
-    'Two' = "#202020",
-    'Three' = "#000000",
+    //  Two Dark-Silver
+    'Two' = "#000000",
+    // Three Black
+    'Three' = "#F2C744",
+    // Four Yellow
     'Four' = "#F2C744",
-    'Five' = "#202020"
+    
+    'Five' = "#000000"
 }
 
 export enum COLOR {
